@@ -5,4 +5,6 @@
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rekky1aws&theme=dark)
 
 ## :information_source: Curriculum Vitae :
-![CV](https://rekkylaws.netlify.app/)
+Mon CV est consultable par [ici](https://rekkylaws.netlify.app/)
+
+My CV is right [here](https://rekkylaws.netlify.app/)
