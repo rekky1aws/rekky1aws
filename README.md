@@ -1,5 +1,10 @@
 # Donatien Hochart
 
+## :wave: Who am I ?
+
+I am a junior web developer interested in many languages to code like HTML, CSS, JavaScript, PHP, SQL, Pyhton, Ruby, Lua, C, Go, Rust...
+
+
 ## :fire: Commit Streak :
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rekky1aws&theme=dark)
