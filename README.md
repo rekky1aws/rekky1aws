@@ -10,12 +10,16 @@
 + [:gb: :us: English](#:gb: :us: English)
 
 
+
+
 ## :fr: Français
 ### :wave: Qui Suis-je ?
 Je suis un développeur web junior qui s'intéresse à beaucoup de langages différents pour coder comme par exemple : HTML, CSS, JavaScript, PHP, SQL, Python, Ruby, Lua, C...
 
 ### :information_source: Curriculum Vitae :
 Mon CV est consultable [par ici](https://rekkylaws.netlify.app/).
+
+
 
 
 ## :gb: :us: English
