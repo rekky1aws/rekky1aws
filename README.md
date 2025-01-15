@@ -2,7 +2,7 @@
 
 ## :fire: Commit Streak :
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rekky1aws&theme=dark)
+[![GitHub Streak](https://streak-stats.demolab.com?user=rekky1aws&theme=merko&locale=fr&date_format=j%2Fn%5B%2FY%5D)](https://git.io/streak-stats)
 
 ## :flashlight: Index
 
