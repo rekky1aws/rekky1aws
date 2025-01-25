@@ -1,0 +1,6 @@
+set number
+set listchars=eol:↵,trail:~,tab:>-,nbsp:␣
+set list
+set shiftwidth=3
+set tabstop=3
+
