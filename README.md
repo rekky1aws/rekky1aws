@@ -19,7 +19,7 @@ J'aime aussi beaucoup les technologies complémentaires à ces bases comme Symfo
 
 Je m'amuse à déveloper des petits jeux et des outils, principalement en web.
 
-### :information_source: Curriculum Vitae :
+### :information_source: CV :
 Mon CV est consultable [par ici](https://rekkylaws.netlify.app/).
 
 
@@ -33,5 +33,5 @@ I also like to use complementary technologies to those ones : Symfony, VueJS, Ty
 
 I like to code mini games and tools, mainly using web technologies.
 
-### :information_source: Curriculum Vitae :
-My CV is right [here](https://rekkylaws.netlify.app/).
+### :information_source: Resume :
+My resume is right [here](https://rekkylaws.netlify.app/). Currently it's only in french but all i need to see are my skills (and you can always use the auto translator to get an approximation if you want).
