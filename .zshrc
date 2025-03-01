@@ -114,17 +114,18 @@ cla()
 	ls -AF
 }
 #
-alias p="cd /mnt/d/projects/ && ls"
-alias pc="cd /mnt/d/projects/code/ && ls"
-alias pcw="cd /mnt/d/projects/code/web/ && ls"
-alias pcwf="cd /mnt/d/projects/code/web/frontend/ && ls"
-alias pcwb="cd /mnt/d/projects/code/web/backend/ && ls"
+alias p="cd ~/projects/ && ls"
+alias pc="cd ~/projects/code/ && ls"
+alias pcw="cd ~/projects/code/web/ && ls"
+alias pcwf="cd ~/projects/code/web/frontend/ && ls"
+alias pcwb="cd ~/projects/code/web/backend/ && ls"
+alias pu="cd ~/projects/_utils/ && ls"
 #
 # editors
 alias s="subl"
 alias s.="subl ."
-alias c="code"
-alias c.="code ."
+alias c="codium"
+alias c.="codium ."
 #
 # local server
 alias sps="hostname -I && php -S 0.0.0.0:8000"
@@ -143,3 +144,20 @@ alias shrl="source ~/.zshrc && echo 'sh reloaded'"
 # git
 alias gts="tree && git status"
 alias gtree="git log --graph --oneline --all"
+#
+# symfony
+alias pbc="php bin/console"
+alias rl-ft="php bin/console doctrine:migrations:migrate first --no-interaction && php bin/console doctrine:migrations:migrate --no-interaction && php bin/console doctrine:fixtures:load --no-interaction"
+#
+# git change commit date
+git_date_change () {
+   GIT_COMMITTER_DATE="$1 $2 $3 $4 20:19:19 BST" git commit --amend --no-edit --date "$1 $2 $3 $4 20:19:19 BST"
+}
+
+#
+# Change upper2 to less/greater
+xmodmap -e "keycode 49 = less greater less greater"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
