@@ -155,8 +155,8 @@ git_date_change () {
 }
 
 #
-# Change upper2 to less/greater
-xmodmap -e "keycode 49 = less greater less greater"
+# Uncomment to : Change upper2 to less/greater
+# xmodmap -e "keycode 49 = less greater less greater"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
