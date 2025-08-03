@@ -1,0 +1,13 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"FileIcons",
+		"MarkdownPreview",
+		"Package Control",
+		"Splunk Conf File Syntax Highlighting",
+	],
+}

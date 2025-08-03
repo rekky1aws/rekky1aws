@@ -1,0 +1,12 @@
+[
+	{
+		"keys": ["alt+z"],
+		"command": "toggle_setting",
+		"args": {"setting": "word_wrap"}
+	},
+	{
+		"keys": ["ctrl+shift+o"],
+		"command": "prompt_open_folder",
+	},
+
+]
