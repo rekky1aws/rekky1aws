@@ -28,4 +28,4 @@ I also made scripts to easily import files from the home directory to this repo,
 ## Complementary Informations
 ### Waybar
 The current waybar config requires a catpuccin theme (because it's based on their config file that I tweaked a bit to fit what I wanted better).
-Usually I use [mocha.css](https://github.com/catppuccin/waybar/blob/main/themes/mocha.css). It should be placed in `~/.config/waybar` to work.
+Usually I use [mocha.css](https://github.com/catppuccin/waybar/blob/main/themes/mocha.css). It should be placed in `~/.config/waybar/` to work.
