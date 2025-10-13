@@ -5,6 +5,7 @@ vim.cmd("set shiftwidth=3")
 vim.cmd("set tabstop=3")
 vim.cmd("set expandtab")
 vim.cmd("set softtabstop=3")
+vim.cmd("set clipboard=unnamedplus")
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
