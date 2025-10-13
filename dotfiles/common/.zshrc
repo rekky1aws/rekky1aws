@@ -114,6 +114,14 @@ cla()
 	ls -AF
 }
 #
+# ls
+# Replace ls by lsd if command exists
+if command -v lsd >/dev/null 2>&1
+then
+   alias ls="lsd -a";
+fi
+#
+# Shortcut to projects
 alias p="cd ~/projects/ && ls"
 alias pc="cd ~/projects/code/ && ls"
 alias pcw="cd ~/projects/code/web/ && ls"
@@ -128,15 +136,15 @@ alias c="codium"
 alias c.="codium ."
 #
 # local server
-alias sps="hostname -I && php -S 0.0.0.0:8000"
-# alias sps1="hostname -I && php -S 0.0.0.0:8010"
-# alias sps2="hostname -I && php -S 0.0.0.0:8020"
-# alias sps3="hostname -I && php -S 0.0.0.0:8030"
-# alias sps4="hostname -I && php -S 0.0.0.0:8040"
-# alias sps5="hostname -I && php -S 0.0.0.0:8050"
-# alias sps6="hostname -I && php -S 0.0.0.0:8060"
-# alias sps7="hostname -I && php -S 0.0.0.0:8070"
-alias sps8="hostname -I && php -S 0.0.0.0:8080"
+alias sps="hostname -i && php -S 0.0.0.0:8000"
+# alias sps1="hostname -i && php -S 0.0.0.0:8010"
+# alias sps2="hostname -i && php -S 0.0.0.0:8020"
+# alias sps3="hostname -i && php -S 0.0.0.0:8030"
+# alias sps4="hostname -i && php -S 0.0.0.0:8040"
+# alias sps5="hostname -i && php -S 0.0.0.0:8050"
+# alias sps6="hostname -i && php -S 0.0.0.0:8060"
+# alias sps7="hostname -i && php -S 0.0.0.0:8070"
+alias sps8="hostname -i && php -S 0.0.0.0:8080"
 #
 # zsh
 alias shrl="source ~/.zshrc && echo 'sh reloaded'"
@@ -161,3 +169,5 @@ git_date_change () {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=$PATH:/home/rekkylaws/.spicetify
