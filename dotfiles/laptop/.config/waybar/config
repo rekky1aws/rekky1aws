@@ -1,0 +1,70 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    // "width": 1280, // Waybar width
+    // Choose the order of the modules
+    "spacing": 2,
+    "modules-left": ["hyprland/workspaces", "custom/music"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "pulseaudio", "battery", "custom/power"],
+    "hyprland/workspaces": {
+         "disable-scroll": false,
+         "sort-by-name": true
+     },
+    "custom/music": {
+        "format": "  {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --format='{{ title }}'",
+        "on-click": "playerctl play-pause",
+        "max-length": 50
+    },
+    "clock": {
+        "timezone": "Europe/Paris",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%H:%M:%S}",
+        "format-alt": "{:%Y-%m-%d %H:%M:%S}",
+        "interval": 1
+    },
+    "battery": {
+       "interval": 5,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "🔋",
+        "format-plugged": "🔌",
+        "format-alt": "{icon}",
+        "format-icons": ["▂", "▃",  "▄", "▅", "▆", "▇"]
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click-right": "pavucontrol",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "hyprlock",
+        "format": "",
+    },
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "wlogout &",
+        "format": "⏻"
+    },
+    "tray": {
+      "icon-size": 21,
+      "spacing": 10,
+      "icons": {
+         "blueman": "bluetooth",
+         "nm-applet": " "
+      }
+    }
+}
