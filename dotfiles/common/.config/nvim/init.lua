@@ -51,6 +51,13 @@ local plugins = {
    },
    {
       "m4xshen/autoclose.nvim"
+   },
+   {
+      "lukas-reineke/indent-blankline.nvim",
+      main = "ibl",
+      ---@module "ibl"
+      ---@type ibl.config
+      opts = {},
    }
 }
 
@@ -79,3 +86,5 @@ require("catppuccin").setup()
 vim.cmd.colorscheme "catppuccin"
 
 require("autoclose").setup()
+
+require("ibl").setup()
