@@ -152,6 +152,7 @@ alias shrl="source ~/.zshrc && echo 'sh reloaded'"
 # git
 alias gts="tree && git status"
 alias gtree="git log --graph --oneline --all"
+alias gdates="git log --all --date=short --pretty=format:\"%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D\""
 #
 # symfony
 alias pbc="php bin/console"
