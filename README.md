@@ -14,7 +14,7 @@
 
 ## Français
 ### :wave: Qui Suis-je ?
-Je suis un web fullstack junior qui s'intéresse à beaucoup de langages différents pour coder comme par exemple : HTML, CSS, JavaScript, PHP, SQL, Python, Ruby, Lua, Bash, Rust, C...
+Je suis un développeur web fullstack qui s'intéresse à beaucoup de langages différents pour coder comme par exemple : HTML, CSS, JavaScript, PHP, SQL, Python, Ruby, Lua, Bash, Rust, C...
 J'aime aussi beaucoup les technologies complémentaires à ces bases comme Symfony, VueJS, TypeScript, Docker, SCSS, TailwindCSS et beaucoup d'autres.
 
 Je m'amuse à déveloper des petits jeux et des outils, principalement en web. Notamment un petit menu similaire à celui de la *Wii* de Nintendo avec pas mal de mes projets fun en frontend (HTML-CSS-JavaScript purs) consultable par [ici](https://rekky1aws.github.io/wii-menu-recreation).
