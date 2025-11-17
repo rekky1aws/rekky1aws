@@ -32,3 +32,7 @@ Usually I use [mocha.css](https://github.com/catppuccin/waybar/blob/main/themes/
 
 ### Rofi
 It's not required but I usually use themes from [newmanls' rofi themes collection](https://github.com/newmanls/rofi-themes-collection). Copy everything in `themes/` to `~/.local/share/rofi/themes/` (create the folder before doing so if it doesn't already exist). Then choose your desired theme with `rofi-theme-selector`.
+
+### Hyprpaper
+To make it easier to choose a wallpaper, I changed my config for hyprpaper from preloading a "real" image to preloading a symlink. It also makes it easier to change wallpaper with a script on hypr launch.
+Create a symlink in `~/.config/hypr/wallpaper` pointing to the image you want to display.
