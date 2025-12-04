@@ -37,6 +37,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Wallpaper
+exec_always --no-startup-id feh --bg-center /hdd/images/wallpapers/16_9/debian1.png
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -66,13 +69,10 @@ bindsym $mod+c kill
 
 # start dmenu (a program launcher)
 bindsym $mod+r exec rofi -show drun -show-icons
-# A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
+focus_follows_mouse no
+
 # bindsym $mod+j focus left
 # bindsym $mod+k focus down
 # bindsym $mod+l focus up
@@ -165,6 +165,8 @@ bindsym $mod+F5 reload
 bindsym $mod+Shift+F5 restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+m exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# log out menu using rofi
+bindsym $mod+m exec "rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu -theme  gruvbox-dark-hard"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
