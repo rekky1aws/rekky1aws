@@ -57,6 +57,9 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q exec $terminal
 
+# screen locker
+bindsym $mod+l exec cinnamon-screensaver-command --lock
+
 # file manager
 bindsym $mod+e exec $fileManager
 
