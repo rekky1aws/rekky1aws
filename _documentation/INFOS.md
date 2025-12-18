@@ -36,3 +36,6 @@ It's not required but I usually use themes from [newmanls' rofi themes collectio
 ### Hyprpaper
 To make it easier to choose a wallpaper, I changed my config for hyprpaper from preloading a "real" image to preloading a symlink. It also makes it easier to change wallpaper with a script on hypr launch.
 Create a symlink in `~/.config/hypr/wallpaper` pointing to the image you want to display.
+
+### Neovim
+Rewamped config made following [Vincent Jousse's blog page](https://vincent.jousse.org/blog/fr/tech/configurer-neovim-comme-ide-a-partir-de-zero-tutoriel-guide/) as a base.
