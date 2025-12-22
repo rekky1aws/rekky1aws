@@ -134,9 +134,10 @@ alias s="subl"
 alias s.="subl ."
 alias c="codium"
 alias c.="codium ."
+alias hx="helix"
 #
 # local server
-alias sps="hostname -i && php -S 0.0.0.0:8000"
+alias sps="php -S 0.0.0.0:8000"
 # alias sps1="hostname -i && php -S 0.0.0.0:8010"
 # alias sps2="hostname -i && php -S 0.0.0.0:8020"
 # alias sps3="hostname -i && php -S 0.0.0.0:8030"
@@ -144,7 +145,7 @@ alias sps="hostname -i && php -S 0.0.0.0:8000"
 # alias sps5="hostname -i && php -S 0.0.0.0:8050"
 # alias sps6="hostname -i && php -S 0.0.0.0:8060"
 # alias sps7="hostname -i && php -S 0.0.0.0:8070"
-alias sps8="hostname -i && php -S 0.0.0.0:8080"
+alias sps8="php -S 0.0.0.0:8080"
 #
 # zsh
 alias shrl="source ~/.zshrc && echo 'sh reloaded'"
@@ -153,6 +154,8 @@ alias shrl="source ~/.zshrc && echo 'sh reloaded'"
 alias gts="tree && git status"
 alias gtree="git log --graph --oneline --all"
 alias gdates="git log --all --date=short --pretty=format:\"%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D\""
+alias groot="cd $(git rev-parse --show-toplevel)"
+
 #
 # symfony
 alias pbc="php bin/console"
