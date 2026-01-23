@@ -1,0 +1,35 @@
+# See https://wiki.hypr.land/Configuring/Window-Rules/ for more
+# See https://wiki.hypr.land/Configuring/Workspace-Rules/ for workspace rules
+
+# Example windowrule
+# windowrule = float,class:^(kitty)$,title:^(kitty)$
+
+# Ignore maximize requests from apps. You'll probably like this.
+windowrule = suppress_event maximize, match:class .*
+
+# Fix some dragging issues with XWayland
+windowrule = no_focus on, match:class ^$, match:title ^$, match:xwayland 1, match:float 1, match:fullscreen 0, match:pin 0
+
+# Set Pavucontrol as a floating window
+windowrule = float on, size 800 800, match:class org.pulseaudio.pavucontrol
+
+# Sublime text config as floating windows
+# Keymap
+windowrule = float on, size 2000 1000, match:class sublime_text, match:title (.*)(\.sublime-keymap)(.*)
+# Settings
+windowrule = float on, size 2000 1000, match:class sublime_text, match:title (.*)(\.sublime-settings)(.*)
+
+# Vivaldi Settings
+windowrule = float on, size 800 800, match:class vivaldi-stable, match:title (Réglages)(.*)
+
+# Spotify no focus at start
+windowrule = no_initial_focus on, workspace 2, match:class Spotify
+
+# Apps on workspace 2
+windowrule = workspace 2, match:class discord
+windowrule = workspace 2, match:class org.clementine_player.Clementine
+windowrule = workspace 2, match:class Aonsoku
+windowrule = workspace 2, match:class org.strawberrymusicplayer.strawberry
+
+
+
