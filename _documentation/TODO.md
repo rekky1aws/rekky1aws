@@ -1,8 +1,9 @@
 # TODO
-
- + Create the script to import files from home directory
+ + Create the scripts to import files from home directory
+  + Choices :
+   + common + (laptop / desktop)
+   + choose which folder to import 
  + Add Infos.md to explain
 
 ## Dotfiles
- + polybar
-  + use catpuccin/mocha colors in power menu
+ + Split hyprland config better
