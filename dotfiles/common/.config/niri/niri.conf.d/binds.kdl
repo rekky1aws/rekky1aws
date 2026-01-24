@@ -149,10 +149,10 @@ binds {
 
     // Usually scrolling up and down with Shift in applications results in
     // horizontal scrolling; these binds replicate that.
-    Mod+WheelScrollDown      { focus-column-right; }
-    Mod+WheelScrollUp        { focus-column-left; }
-    Mod+Ctrl+WheelScrollDown { move-column-right; }
-    Mod+Ctrl+WheelScrollUp   { move-column-left; }
+    Mod+WheelScrollDown      cooldown-ms=100 { focus-column-right; }
+    Mod+WheelScrollUp        cooldown-ms=100 { focus-column-left; }
+    Mod+Ctrl+WheelScrollDown cooldown-ms=100 { move-column-right; }
+    Mod+Ctrl+WheelScrollUp   cooldown-ms=100 { move-column-left; }
 
     // Similarly, you can bind touchpad scroll "ticks".
     // Touchpad scrolling is continuous, so for these binds it is split into
