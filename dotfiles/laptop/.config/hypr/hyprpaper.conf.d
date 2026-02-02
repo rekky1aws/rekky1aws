@@ -22,15 +22,14 @@ windowrule = float on, size 2000 1000, match:class sublime_text, match:title (.*
 # Vivaldi Settings
 windowrule = float on, size 800 800, match:class vivaldi-stable, match:title (Réglages)(.*)
 
-# no focus at start
+# Spotify no focus at start
 windowrule = no_initial_focus on, workspace 2, match:class Spotify
-windowrule = no_initial_focus on, workspace 2, match:class discord
-windowrule = no_initial_focus on, workspace 2, match:class Aonsoku
 
-# Apps on workspace 10
-windowrule = workspace 10, match:class org.clementine_player.Clementine
-windowrule = workspace 10, match:class Aonsoku
-windowrule = workspace 10, match:class org.strawberrymusicplayer.strawberry
+# Apps on workspace 2
+windowrule = workspace 2, match:class discord
+windowrule = workspace 2, match:class org.clementine_player.Clementine
+windowrule = workspace 2, match:class Aonsoku
+windowrule = workspace 2, match:class org.strawberrymusicplayer.strawberry
 
-# Apps on workspace 9
-windowrule = workspace 9, match:class discord
+
+
