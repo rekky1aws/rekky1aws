@@ -304,32 +304,6 @@ window-rule {
     default-column-width {}
 }
 
-// Open picture-in-picture player as floating by default.
-window-rule {
-  match title="(?i)picture.in.picture"
-  default-column-width { proportion 0.25; }
-  open-floating true
-  default-floating-position x=100 y=200 relative-to="bottom-right"
-}
-
-// Example: block out two password managers from screen capture.
-// (This example rule is commented out with a "/-" in front.)
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-
-    // Use this instead if you want them visible on third-party screenshot tools.
-    // block-out-from "screencast"
-}
-
-// Slightly Rounded Window Borders
-window-rule {
-    geometry-corner-radius 4
-    clip-to-geometry true
-}
-
 // Disable Niri preview when going to top left of screen (hot corner)
 gestures {
   hot-corners {
@@ -339,3 +313,6 @@ gestures {
 
 // Binds
 include "niri.conf.d/binds.kdl"
+
+// Window Rules
+include "niri.conf.d/windowrule.kdl"
