@@ -18,7 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 -- … début du fichier
 
 -- Configuration de lazy.nvim et importation des répertoires `plugins` et `plugins.lsp`
-require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" }, { import = "plugins.colorschemes" } }, {
+require("lazy").setup({ { import = "plugins" }, { import = "plugins.colorschemes" } }, {
   -- vérifie automatiquement les mises à jour des plugins mais sans notifier
   -- lualine va se charger de nous afficher un icône
   checker = {
