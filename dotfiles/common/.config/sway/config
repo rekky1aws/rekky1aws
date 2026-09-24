@@ -1,0 +1,156 @@
+### Variables
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+set $term kitty
+set $menu rofi -show drun -show-icons
+set $webBrowser vivaldi
+set $fileManager thunar
+
+# Launch DMS on start up
+exec dms run
+
+### Input configuration
+   input type:keyboard {
+       xkb_layout "fr"
+       xkb_numlock enabled
+   }
+
+### Key bindings
+    # Start a terminal
+    bindsym $mod+q exec $term
+
+    # Kill focused window
+    bindsym $mod+c kill
+
+    # Start your launcher
+    bindsym $mod+r exec $menu
+
+    # Start web browser
+    bindsym $mod+b exec $webBrowser
+
+    # Start file manager
+    bindsym $mod+e exec $fileManager
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+F5 reload
+
+    # Open DMS exit menu
+    bindsym $mod+Shift+m exec dms ipc call powermenu open 
+#
+# Moving around:
+#
+    # Move your focus around
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # Move the focused window with the same, but add Shift
+    bindsym $mod+Ctrl+Left move left
+    bindsym $mod+Ctrl+Down move down
+    bindsym $mod+Ctrl+Up move up
+    bindsym $mod+Ctrl+Right move right
+#
+# Workspaces:
+#
+    # Switch to workspace
+    bindsym $mod+ampersand workspace number 1
+    bindsym $mod+eacute workspace number 2
+    bindsym $mod+quotedbl workspace number 3
+    bindsym $mod+apostrophe workspace number 4
+    bindsym $mod+parenleft workspace number 5
+    bindsym $mod+minus workspace number 6
+    bindsym $mod+egrave workspace number 7
+    bindsym $mod+underscore workspace number 8
+    bindsym $mod+ccedilla workspace number 9
+    bindsym $mod+agrave workspace number 10
+
+    bindsym $mod+Prior workspace prev
+    bindsym $mod+Next workscpace next
+
+    # Move focused container to workspace
+    bindsym $mod+Ctrl+ampersand move container to workspace number 1
+    bindsym $mod+Ctrl+eacute move container to workspace number 2
+    bindsym $mod+Ctrl+quotedbl move container to workspace number 3
+    bindsym $mod+Ctrl+apostrophe move container to workspace number 4
+    bindsym $mod+Ctrl+parenleft move container to workspace number 5
+    bindsym $mod+Ctrl+minus move container to workspace number 6
+    bindsym $mod+Ctrl+egrave move container to workspace number 7
+    bindsym $mod+Ctrl+underscore move container to workspace number 8
+    bindsym $mod+Ctrl+ccedilla move container to workspace number 9
+    bindsym $mod+Ctrl+agrave move container to workspace number 10
+
+    bindsym $mod+Ctrl+Prior move container to workspace prev
+    bindsym $mod+Ctrl+Next move container to workspace next
+
+    # Note: workspaces can have any name you want, not just numbers.
+    # We just use 1-10 as the default.
+#
+# Layout stuff:
+#
+    # Make the current focus fullscreen
+    bindsym $mod+f fullscreen
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym $mod+v floating toggle
+
+    # Swap focus between the tiling area and the floating area
+    bindsym $mod+Shift+v focus mode_toggle
+#
+# Scratchpad:
+#
+    # Sway has a "scratchpad", which is a bag of holding for windows.
+    # You can send windows there and get them back later.
+
+    # Move the currently focused window to the scratchpad
+    bindsym $mod+Ctrl+s move scratchpad
+
+    # Show the next scratchpad window or hide the focused scratchpad window.
+    # If there are multiple scratchpad windows, this command cycles through them.
+    bindsym $mod+s scratchpad show
+#
+# Utilities:
+#
+    # Special keys to adjust volume via PulseAudio
+    bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+    bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+
+    # Special keys to control media via playerctl
+    bindsym --locked XF86AudioPlay exec playerctl play-pause
+    bindsym --locked XF86AudioPause exec playerctl play-pause
+    bindsym --locked XF86AudioPrev exec playerctl previous
+    bindsym --locked XF86AudioNext exec playerctl next
+    bindsym --locked XF86AudioStop exec playerctl stop
+
+    # Normal keys to control media via playerctl
+    bindsym $mod+Shift+Left exec playerctl previous
+    bindsym $mod+Shift+Right exec playerctl next
+    bindsym $mod+Shift+Down exec playerctl play-pause
+    # bindsym $mod+Shift+Up exec playerctl stop
+
+    # Special keys to adjust brightness via brightnessctl
+    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+
+    # Normal Keys to adjust brightness via brightnessctl
+    bindsym $mod+Shift+Prior exec brightnessctl set +5%
+    bindsym $mod+Shift+Next exec brightnessctl set 5%-
+
+    # Special key to take a screenshot
+    bindsym Print exec grim
+    bindsym Ctrl+Print exec grim - | wl-copy
+    bindsym Ctrl+Shift+Print exec grim -g "$(slurp)" - | wl-copy
+
+    # Screenlocker
+    bindsym $mod+l exec dms ipc lock lock
+
+
+#
+
+include @sysconfdir@/sway/config.d/*
