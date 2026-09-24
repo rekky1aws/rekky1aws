@@ -149,8 +149,17 @@ exec dms run
 
     # Screenlocker
     bindsym $mod+l exec dms ipc lock lock
-
-
 #
+### Look and style
+#
+   default_border none
+   gaps inner 10
+   focus_follows_mouse  no
+   mouse_warping none
+
+   #  swayfx exclusives below, comment if on base sway
+   corner_radius 10
+   default_dim_inactive 0.1
+
 
 include @sysconfdir@/sway/config.d/*
