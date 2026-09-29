@@ -154,6 +154,8 @@ exec dms run
 #
    default_border none
    gaps inner 10
+   smart_gaps on
+
    focus_follows_mouse  no
    mouse_warping none
 
