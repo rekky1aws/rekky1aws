@@ -311,6 +311,12 @@ gestures {
   }
 }
 
+// Environment
+environment {
+  QT_QPA_PLATFORMTHEME "qt6ct"
+}
+
+
 // Binds
 include "niri.conf.d/binds.kdl"
 
